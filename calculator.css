@@ -1,17 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@keyframes glowing-border {
-    0% {
-        box-shadow: 0 0 5px #00ff6c, 0 0 10px #00ff6c, 0 0 20px #00ff6c;
-    }
-    50% {
-        box-shadow: 0 0 10px #00ff6c, 0 0 20px #00ff6c, 0 0 40px #00ff6c;
-    }
-    100% {
-        box-shadow: 0 0 5px #00ff6c, 0 0 10px #00ff6c, 0 0 20px #00ff6c;
-    }
-}
 
+/*styling whole HTML body*/
 body{
     background:linear-gradient(to right,#00AAFF,#00ff6c);
     display:flex;
@@ -21,7 +11,7 @@ body{
     width:100vw;
     font-family: "poppins", sans-serif;
 }
-
+/*styling calculator border class */
 .calculator-border{
     width:430px;
     height:600px;
@@ -29,7 +19,7 @@ body{
     border-radius: 10px;
     border: 2px solid #00ff6c;
     animation: pulsate-border 1.5s infinite;}
-
+/* styling class screen*/
 .screen{
     width:430px;
     height: 150px;
@@ -41,7 +31,7 @@ body{
     align-items: flex-end;
     font-size:3rem;
 }
-
+/* styling buttons class*/
 .buttons{
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -49,7 +39,7 @@ body{
   padding:10px;
   margin-left:20px;
 }
-
+/* styling all operand classes from button tag*/
 .operand{
     background-color: white;
     padding:10px;
@@ -61,6 +51,7 @@ body{
     font-size: larger;
     cursor: pointer;
 }
+/* styling all operandcolor classes from button tag*/
 .operandcolor{
     color:#FFFFFF;
     font-size: larger;
@@ -72,14 +63,20 @@ body{
     color:#FFFFFF;
 }
 
-img{
-    color:#00ff6c;
-}
 
+/* giving active effect to class operand of all button tag*/
 .operand:active{
     box-shadow: 1px 1px 1px 1px grey;
 }
-
+/* giving active effect to class operand of all button tag*/
 .operandcolor:active{
     box-shadow: 1px 1px 1px 1px #FF7518;
+}
+/* giving slight hovering effect to class operand from all button tag*/
+.operand:hover{
+    color:#FF7518;
+}
+/* giving slight hovering effect to class operandcolor from all button tag*/
+.operandcolor:hover{
+    color:#00ff6c;
 }
